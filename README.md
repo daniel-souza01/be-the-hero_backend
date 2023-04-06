@@ -15,3 +15,12 @@
 - [ ] A senha do usuário precisa estar criptografada;
 - [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+
+## run guide
+
+- [ ] npm install
+- [ ] copy .env.example to .env file
+- [ ] docker-compose up
+- [ ] npx prisma generate
+- [ ] npx prisma migrate dev
+- [ ] npm run start:dev

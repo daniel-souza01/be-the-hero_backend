@@ -1,26 +1,61 @@
-## Requisitos funcionais
+# Setup
 
-- [ ] Deve ser possível se cadastrar;
-- [ ] Deve ser possível se autenticar;
-- [ ] Deve ser possível cadastrar um novo caso;
-- [ ] Deve ser possível deletar um caso;
-- [ ] Deve ser possível obter todos os casos cadastrados;
+<ol>
+<li>
+Clone the app:
 
-## Regras de negócio
+```
+git clone https://github.com/...
+```
+</li>
 
-- [ ] O usuário não deve poder se cadastrar com um e-mail duplicado;
+<li>
+Install all dependencies:
 
-## Requisitos não-funcionais
+```
+yarn
+or
+npm install
+```
+</li>
 
-- [ ] A senha do usuário precisa estar criptografada;
-- [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
-- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+<li> 
 
-## run guide
+Copy `.env.example` to `.env` .
+</li>
 
-- [ ] npm install
-- [ ] copy .env.example to .env file
-- [ ] docker-compose up
-- [ ] npx prisma generate
-- [ ] npx prisma migrate dev
-- [ ] npm run start:dev
+<li>
+Create and start the docker container:
+
+```
+docker-compose up
+```
+</li>
+
+<li>
+Generate prisma client:
+
+```
+npx prisma generate
+```
+</li>
+
+<li>
+Run the migrations:
+
+```
+npx prisma migrate dev
+```
+</li>
+
+<li>
+Run application:
+
+```
+npm run start:dev
+
+```
+</li>
+</ol>
+
+---

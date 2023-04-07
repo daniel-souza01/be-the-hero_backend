@@ -56,7 +56,7 @@ describe('Register Use Case', () => {
       phone: '99999999',
     })
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         name: 'John Doe',
         email,

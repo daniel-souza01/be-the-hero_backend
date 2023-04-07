@@ -1,13 +1,13 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2023-04-06T21:13:08.085Z",
+  "__export_date": "2023-04-07T19:04:49.811Z",
   "__export_source": "insomnia.desktop.app:v2022.6.0",
   "resources": [
     {
       "_id": "req_47fe0420dcf4404b96c5cdcfcafa25bf",
       "parentId": "fld_e3ac6081280c448aafad3f3e81df0106",
-      "modified": 1680815570457,
+      "modified": 1680894274654,
       "created": 1680814990850,
       "url": "{{ _.base_url }}/users",
       "name": "create account",
@@ -15,7 +15,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"ong name\",\n\t\"email\": \"ongname@example.com\",\n\t\"phone\": \"9999999\",\n\t\"city\": \"patos\",\n\t\"uf\": \"pb\",\n\t\"password_hash\": \"123456\"\n}"
+        "text": "{\n\t\"name\": \"ong name\",\n\t\"email\": \"ongname@example.com\",\n\t\"phone\": \"9999999\",\n\t\"city\": \"patos\",\n\t\"uf\": \"pb\",\n\t\"password\": \"123456\"\n}"
       },
       "parameters": [],
       "headers": [{ "name": "Content-Type", "value": "application/json" }],
@@ -51,6 +51,32 @@
       "description": "",
       "scope": "collection",
       "_type": "workspace"
+    },
+    {
+      "_id": "req_2898016083854b49b6fafe6e4c56e80b",
+      "parentId": "fld_e3ac6081280c448aafad3f3e81df0106",
+      "modified": 1680894275842,
+      "created": 1680894013541,
+      "url": "{{ _.base_url }}/sessions",
+      "name": "authenticate",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"ongname@example.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1680814990800,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
     },
     {
       "_id": "env_ed5ec6a0175d7190316919edada6703eed92d6dd",

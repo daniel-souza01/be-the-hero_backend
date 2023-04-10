@@ -25,4 +25,12 @@ export class InMemoryCasesRepository implements CasesRepository {
 
     return caseData
   }
+
+  async delete(caseId: string) {
+    const filteredItems = this.items.filter((item) => item.id !== caseId)
+
+    this.items = filteredItems
+
+    return this.items
+  }
 }

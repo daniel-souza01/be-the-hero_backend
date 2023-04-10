@@ -21,4 +21,12 @@ export class PrismaCasesRepository implements CasesRepository {
 
     return caseCreated
   }
+
+  async delete(caseId: string) {
+    await prisma.case.delete({
+      where: {
+        id: caseId,
+      },
+    })
+  }
 }

@@ -5,6 +5,12 @@ import { randomUUID } from 'crypto'
 export class InMemoryCasesRepository implements CasesRepository {
   public items: Case[] = []
 
+  async findManyByUserId(userId: string) {
+    const cases = this.items.filter((item) => item.user_id === userId)
+
+    return cases
+  }
+
   async create(data: Prisma.CaseUncheckedCreateInput) {
     const caseData = {
       id: randomUUID(),

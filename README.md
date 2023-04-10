@@ -5,7 +5,7 @@
 Clone the app:
 
 ```
-git clone https://github.com/...
+git clone https://github.com/daniel-souza01/be-the-hero_backend.git
 ```
 
 </li>

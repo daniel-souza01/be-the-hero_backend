@@ -67,7 +67,7 @@ npm run start:dev
 
 # Insomnia doc
 
-<a href="https://insomnia.rest/run/?label=be%20the%20hero%20backend&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdaniel-souza01%2Fbe-the-hero_backend%2Fmain%2Fdocs%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=be%20the%20hero%20backend&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdaniel-souza01%2Fbe-the-hero_backend%2Fmain%2Fdocs%2FInsomnia.json)
 
 # Diagram
 

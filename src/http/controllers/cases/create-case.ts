@@ -3,10 +3,7 @@ import { makeCreateCaseUseCase } from '@/use-cases/factories/make-create-case-us
 import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
 
-export async function caseController(
-  request: FastifyRequest,
-  reply: FastifyReply
-) {
+export async function createCase(request: FastifyRequest, reply: FastifyReply) {
   const caseBodySchema = z.object({
     title: z.string(),
     description: z.string(),
